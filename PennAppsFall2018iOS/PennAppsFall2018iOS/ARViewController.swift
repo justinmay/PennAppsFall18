@@ -108,10 +108,23 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             
             addSphere(position: pos)
             
+            //ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
+            ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
+        }
+        
+        if let cameraNode = self.sceneView.pointOfView {
+            
+            let distance: Float = 1.0 // Hardcoded depth
+            let pos = sceneSpacePosition(inFrontOf: cameraNode, atDistance: distance)
+            
+            addSphere(position: pos)
+            
+            //ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
             ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
         }
         
     }
+    
     
     //returns a SCNMatrix4 of the position
     func sceneSpacePosition(inFrontOf node: SCNNode, atDistance distance: Float) -> SCNVector3 {
@@ -119,6 +132,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         let scenePosition = node.convertPosition(localPosition, to: nil)
         // to: nil is automatically scene space
         return scenePosition
+    }
+    func addWaterBall(position: SCNVector3){
+        print("adding sphere at point: \(position)")
+        let sphere: WaterBall = WaterBall(position: position)
+        let water = SCNParticleSystem(named: "Water", inDirectory: nil)!
+        water.emitterShape = SCNCone(topRadius: 0.1,bottomRadius: 0.1,height: 0.1)
+        water.emissionDuration = 2.0
+        water.particleLifeSpan = 2.0
+        water.stretchFactor = 2.0
+        water.acceleration = SCNVector3(0,0,1.0)
+        //fire.dampingFactor = 1.0
+        //fire.isAffectedByGravity = true
+        sphere.addParticleSystem(water)
+        self.sceneView.scene.rootNode.addChildNode(sphere)
     }
     
     func addSphere(position: SCNVector3){
@@ -128,6 +155,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         fire.emitterShape = SCNCone(topRadius: 0.1,bottomRadius: 0.1,height: 0.1)
         fire.emissionDuration = 2.0
         fire.particleLifeSpan = 2.0
+        fire.stretchFactor = 2.0
+        fire.acceleration = SCNVector3(0,0,1.0)
+        //fire.dampingFactor = 1.0
         //fire.isAffectedByGravity = true
         sphere.addParticleSystem(fire)
         self.sceneView.scene.rootNode.addChildNode(sphere)
