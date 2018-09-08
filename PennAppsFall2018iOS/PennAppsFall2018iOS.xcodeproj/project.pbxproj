@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */; };
+		CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E5421435BCC007FAA0C /* ViewController.swift */; };
+		CBEA5E5821435BCC007FAA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E5621435BCC007FAA0C /* Main.storyboard */; };
+		CBEA5E5A21435BCE007FAA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E5921435BCE007FAA0C /* Assets.xcassets */; };
+		CBEA5E5D21435BCE007FAA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */; };
+		CBEA5E6821435BCE007FAA0C /* PennAppsFall2018iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E6721435BCE007FAA0C /* PennAppsFall2018iOSTests.swift */; };
+		CBEA5E7321435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E7221435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBEA5E6421435BCE007FAA0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEA5E4721435BCC007FAA0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEA5E4E21435BCC007FAA0C;
+			remoteInfo = PennAppsFall2018iOS;
+		};
+		CBEA5E6F21435BCE007FAA0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEA5E4721435BCC007FAA0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEA5E4E21435BCC007FAA0C;
+			remoteInfo = PennAppsFall2018iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBEA5E4F21435BCC007FAA0C /* PennAppsFall2018iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennAppsFall2018iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBEA5E5421435BCC007FAA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBEA5E5721435BCC007FAA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBEA5E5921435BCE007FAA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBEA5E5C21435BCE007FAA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBEA5E5E21435BCE007FAA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEA5E6321435BCE007FAA0C /* PennAppsFall2018iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennAppsFall2018iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEA5E6721435BCE007FAA0C /* PennAppsFall2018iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennAppsFall2018iOSTests.swift; sourceTree = "<group>"; };
+		CBEA5E6921435BCE007FAA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEA5E6E21435BCE007FAA0C /* PennAppsFall2018iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennAppsFall2018iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEA5E7221435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennAppsFall2018iOSUITests.swift; sourceTree = "<group>"; };
+		CBEA5E7421435BCE007FAA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBEA5E4C21435BCC007FAA0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEA5E6021435BCE007FAA0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEA5E6B21435BCE007FAA0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBEA5E4621435BCC007FAA0C = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E5121435BCC007FAA0C /* PennAppsFall2018iOS */,
+				CBEA5E6621435BCE007FAA0C /* PennAppsFall2018iOSTests */,
+				CBEA5E7121435BCE007FAA0C /* PennAppsFall2018iOSUITests */,
+				CBEA5E5021435BCC007FAA0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBEA5E5021435BCC007FAA0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E4F21435BCC007FAA0C /* PennAppsFall2018iOS.app */,
+				CBEA5E6321435BCE007FAA0C /* PennAppsFall2018iOSTests.xctest */,
+				CBEA5E6E21435BCE007FAA0C /* PennAppsFall2018iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBEA5E5121435BCC007FAA0C /* PennAppsFall2018iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */,
+				CBEA5E5421435BCC007FAA0C /* ViewController.swift */,
+				CBEA5E5621435BCC007FAA0C /* Main.storyboard */,
+				CBEA5E5921435BCE007FAA0C /* Assets.xcassets */,
+				CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */,
+				CBEA5E5E21435BCE007FAA0C /* Info.plist */,
+			);
+			path = PennAppsFall2018iOS;
+			sourceTree = "<group>";
+		};
+		CBEA5E6621435BCE007FAA0C /* PennAppsFall2018iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E6721435BCE007FAA0C /* PennAppsFall2018iOSTests.swift */,
+				CBEA5E6921435BCE007FAA0C /* Info.plist */,
+			);
+			path = PennAppsFall2018iOSTests;
+			sourceTree = "<group>";
+		};
+		CBEA5E7121435BCE007FAA0C /* PennAppsFall2018iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E7221435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift */,
+				CBEA5E7421435BCE007FAA0C /* Info.plist */,
+			);
+			path = PennAppsFall2018iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBEA5E4E21435BCC007FAA0C /* PennAppsFall2018iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEA5E7721435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOS" */;
+			buildPhases = (
+				CBEA5E4B21435BCC007FAA0C /* Sources */,
+				CBEA5E4C21435BCC007FAA0C /* Frameworks */,
+				CBEA5E4D21435BCC007FAA0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PennAppsFall2018iOS;
+			productName = PennAppsFall2018iOS;
+			productReference = CBEA5E4F21435BCC007FAA0C /* PennAppsFall2018iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBEA5E6221435BCE007FAA0C /* PennAppsFall2018iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEA5E7A21435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOSTests" */;
+			buildPhases = (
+				CBEA5E5F21435BCE007FAA0C /* Sources */,
+				CBEA5E6021435BCE007FAA0C /* Frameworks */,
+				CBEA5E6121435BCE007FAA0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEA5E6521435BCE007FAA0C /* PBXTargetDependency */,
+			);
+			name = PennAppsFall2018iOSTests;
+			productName = PennAppsFall2018iOSTests;
+			productReference = CBEA5E6321435BCE007FAA0C /* PennAppsFall2018iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBEA5E6D21435BCE007FAA0C /* PennAppsFall2018iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEA5E7D21435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOSUITests" */;
+			buildPhases = (
+				CBEA5E6A21435BCE007FAA0C /* Sources */,
+				CBEA5E6B21435BCE007FAA0C /* Frameworks */,
+				CBEA5E6C21435BCE007FAA0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEA5E7021435BCE007FAA0C /* PBXTargetDependency */,
+			);
+			name = PennAppsFall2018iOSUITests;
+			productName = PennAppsFall2018iOSUITests;
+			productReference = CBEA5E6E21435BCE007FAA0C /* PennAppsFall2018iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBEA5E4721435BCC007FAA0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Justin May";
+				TargetAttributes = {
+					CBEA5E4E21435BCC007FAA0C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CBEA5E6221435BCE007FAA0C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CBEA5E4E21435BCC007FAA0C;
+					};
+					CBEA5E6D21435BCE007FAA0C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CBEA5E4E21435BCC007FAA0C;
+					};
+				};
+			};
+			buildConfigurationList = CBEA5E4A21435BCC007FAA0C /* Build configuration list for PBXProject "PennAppsFall2018iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBEA5E4621435BCC007FAA0C;
+			productRefGroup = CBEA5E5021435BCC007FAA0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBEA5E4E21435BCC007FAA0C /* PennAppsFall2018iOS */,
+				CBEA5E6221435BCE007FAA0C /* PennAppsFall2018iOSTests */,
+				CBEA5E6D21435BCE007FAA0C /* PennAppsFall2018iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBEA5E4D21435BCC007FAA0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEA5E5D21435BCE007FAA0C /* LaunchScreen.storyboard in Resources */,
+				CBEA5E5A21435BCE007FAA0C /* Assets.xcassets in Resources */,
+				CBEA5E5821435BCC007FAA0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEA5E6121435BCE007FAA0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEA5E6C21435BCE007FAA0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBEA5E4B21435BCC007FAA0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */,
+				CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEA5E5F21435BCE007FAA0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEA5E6821435BCE007FAA0C /* PennAppsFall2018iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEA5E6A21435BCE007FAA0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEA5E7321435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBEA5E6521435BCE007FAA0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEA5E4E21435BCC007FAA0C /* PennAppsFall2018iOS */;
+			targetProxy = CBEA5E6421435BCE007FAA0C /* PBXContainerItemProxy */;
+		};
+		CBEA5E7021435BCE007FAA0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEA5E4E21435BCC007FAA0C /* PennAppsFall2018iOS */;
+			targetProxy = CBEA5E6F21435BCE007FAA0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBEA5E5621435BCC007FAA0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBEA5E5721435BCC007FAA0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBEA5E5C21435BCE007FAA0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBEA5E7521435BCE007FAA0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBEA5E7621435BCE007FAA0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBEA5E7821435BCE007FAA0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBEA5E7921435BCE007FAA0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBEA5E7B21435BCE007FAA0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				INFOPLIST_FILE = PennAppsFall2018iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PennAppsFall2018iOS.app/PennAppsFall2018iOS";
+			};
+			name = Debug;
+		};
+		CBEA5E7C21435BCE007FAA0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				INFOPLIST_FILE = PennAppsFall2018iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PennAppsFall2018iOS.app/PennAppsFall2018iOS";
+			};
+			name = Release;
+		};
+		CBEA5E7E21435BCE007FAA0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				INFOPLIST_FILE = PennAppsFall2018iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PennAppsFall2018iOS;
+			};
+			name = Debug;
+		};
+		CBEA5E7F21435BCE007FAA0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				INFOPLIST_FILE = PennAppsFall2018iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PennAppsFall2018iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBEA5E4A21435BCC007FAA0C /* Build configuration list for PBXProject "PennAppsFall2018iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEA5E7521435BCE007FAA0C /* Debug */,
+				CBEA5E7621435BCE007FAA0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEA5E7721435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEA5E7821435BCE007FAA0C /* Debug */,
+				CBEA5E7921435BCE007FAA0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEA5E7A21435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEA5E7B21435BCE007FAA0C /* Debug */,
+				CBEA5E7C21435BCE007FAA0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEA5E7D21435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEA5E7E21435BCE007FAA0C /* Debug */,
+				CBEA5E7F21435BCE007FAA0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBEA5E4721435BCC007FAA0C /* Project object */;
+}
