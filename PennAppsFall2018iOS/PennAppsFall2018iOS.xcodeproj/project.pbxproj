@@ -14,6 +14,12 @@
 		CBEA5E5D21435BCE007FAA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */; };
 		CBEA5E6821435BCE007FAA0C /* PennAppsFall2018iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E6721435BCE007FAA0C /* PennAppsFall2018iOSTests.swift */; };
 		CBEA5E7321435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E7221435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift */; };
+		CBEA5E8121435D01007FAA0C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E8021435D01007FAA0C /* ARViewController.swift */; };
+		CBEA5E8921438750007FAA0C /* ARHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E8821438750007FAA0C /* ARHelperMethods.swift */; };
+		CBEA5E8B21438ADA007FAA0C /* candle.scn in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E8A21438ADA007FAA0C /* candle.scn */; };
+		CBEA5E8F2143FA33007FAA0C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E8D2143FA33007FAA0C /* spark.png */; };
+		CBEA5E902143FA33007FAA0C /* Fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E8E2143FA33007FAA0C /* Fire.scnp */; };
+		CBEA5E93214403C1007FAA0C /* FireBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E92214403C1007FAA0C /* FireBall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		CBEA5E6E21435BCE007FAA0C /* PennAppsFall2018iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennAppsFall2018iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEA5E7221435BCE007FAA0C /* PennAppsFall2018iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennAppsFall2018iOSUITests.swift; sourceTree = "<group>"; };
 		CBEA5E7421435BCE007FAA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEA5E8021435D01007FAA0C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		CBEA5E8821438750007FAA0C /* ARHelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARHelperMethods.swift; sourceTree = "<group>"; };
+		CBEA5E8A21438ADA007FAA0C /* candle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = candle.scn; path = ../../../../../Downloads/candle.scn; sourceTree = "<group>"; };
+		CBEA5E8D2143FA33007FAA0C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CBEA5E8E2143FA33007FAA0C /* Fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Fire.scnp; sourceTree = "<group>"; };
+		CBEA5E92214403C1007FAA0C /* FireBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,13 @@
 		CBEA5E5121435BCC007FAA0C /* PennAppsFall2018iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CBEA5E91214403A7007FAA0C /* Objects */,
+				CBEA5E8C2143F9FE007FAA0C /* Fire */,
 				CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */,
+				CBEA5E8A21438ADA007FAA0C /* candle.scn */,
 				CBEA5E5421435BCC007FAA0C /* ViewController.swift */,
+				CBEA5E8021435D01007FAA0C /* ARViewController.swift */,
+				CBEA5E8821438750007FAA0C /* ARHelperMethods.swift */,
 				CBEA5E5621435BCC007FAA0C /* Main.storyboard */,
 				CBEA5E5921435BCE007FAA0C /* Assets.xcassets */,
 				CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */,
@@ -123,6 +140,23 @@
 				CBEA5E7421435BCE007FAA0C /* Info.plist */,
 			);
 			path = PennAppsFall2018iOSUITests;
+			sourceTree = "<group>";
+		};
+		CBEA5E8C2143F9FE007FAA0C /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E8D2143FA33007FAA0C /* spark.png */,
+				CBEA5E8E2143FA33007FAA0C /* Fire.scnp */,
+			);
+			path = Fire;
+			sourceTree = "<group>";
+		};
+		CBEA5E91214403A7007FAA0C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA5E92214403C1007FAA0C /* FireBall.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBEA5E5D21435BCE007FAA0C /* LaunchScreen.storyboard in Resources */,
+				CBEA5E8F2143FA33007FAA0C /* spark.png in Resources */,
 				CBEA5E5A21435BCE007FAA0C /* Assets.xcassets in Resources */,
+				CBEA5E8B21438ADA007FAA0C /* candle.scn in Resources */,
+				CBEA5E902143FA33007FAA0C /* Fire.scnp in Resources */,
 				CBEA5E5821435BCC007FAA0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEA5E8121435D01007FAA0C /* ARViewController.swift in Sources */,
 				CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */,
 				CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */,
+				CBEA5E8921438750007FAA0C /* ARHelperMethods.swift in Sources */,
+				CBEA5E93214403C1007FAA0C /* FireBall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

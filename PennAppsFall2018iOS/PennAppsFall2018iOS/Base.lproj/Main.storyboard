@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,128 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vog-RA-3LS">
+                                <rect key="frame" x="94" y="120" width="187" height="66"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Agni Kai">
+                                        <attributes>
+                                            <font key="NSFont" size="48" name="AvenirNext-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elements" translatesAutoresizingMaskIntoConstraints="NO" id="er3-Uo-WR6">
+                                <rect key="frame" x="87" y="-66.5" width="200" height="800"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ueb-SJ-CrT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqj-4w-T7e">
+                                <rect key="frame" x="171" y="484" width="32" height="33"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="7mH-07-bMW" kind="show" id="lcb-qj-1ta"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vog-RA-3LS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xE-co-Qah"/>
+                            <constraint firstItem="er3-Uo-WR6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BNo-hj-JzY"/>
+                            <constraint firstItem="er3-Uo-WR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CJT-Xu-WfO"/>
+                            <constraint firstItem="gqj-4w-T7e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="esk-in-6cz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gqj-4w-T7e" secondAttribute="bottom" constant="150" id="nEu-Nm-S8f"/>
+                            <constraint firstItem="vog-RA-3LS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="xYU-uS-run"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="156" y="33.733133433283363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aRl-we-xfl">
+            <objects>
+                <viewController id="7mH-07-bMW" customClass="ARViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FE3-rC-POe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r1P-gR-gzF" userLabel="Image Stack View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-fS-RQ4" userLabel="RightImage View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-aP-SkU" userLabel="LeftImage View">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pP5-sD-hM6" userLabel="AR Stack View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQS-WG-H2l" userLabel="LeftARSCNView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    </arscnView>
+                                    <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50A-nz-yJM" userLabel="RightARSCNView">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                    </arscnView>
+                                </subviews>
+                            </stackView>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wph-ER-ox0">
+                                <rect key="frame" x="67.5" y="20" width="240" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Cgi-bc-JTW"/>
+                                    <constraint firstAttribute="height" constant="135" id="kOy-s2-0da"/>
+                                </constraints>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wph-ER-ox0" firstAttribute="top" secondItem="Glf-En-Z4U" secondAttribute="top" id="8MY-yN-vXX"/>
+                            <constraint firstItem="Glf-En-Z4U" firstAttribute="bottom" secondItem="pP5-sD-hM6" secondAttribute="bottom" id="DPe-Lz-mUU"/>
+                            <constraint firstItem="Glf-En-Z4U" firstAttribute="trailing" secondItem="r1P-gR-gzF" secondAttribute="trailing" id="Nki-6G-9GN"/>
+                            <constraint firstItem="r1P-gR-gzF" firstAttribute="leading" secondItem="Glf-En-Z4U" secondAttribute="leading" id="NpT-to-UKn"/>
+                            <constraint firstItem="pP5-sD-hM6" firstAttribute="leading" secondItem="Glf-En-Z4U" secondAttribute="leading" id="Ri6-Zk-7PK"/>
+                            <constraint firstItem="r1P-gR-gzF" firstAttribute="top" secondItem="Glf-En-Z4U" secondAttribute="top" id="RyR-CY-hqU"/>
+                            <constraint firstItem="Wph-ER-ox0" firstAttribute="centerX" secondItem="FE3-rC-POe" secondAttribute="centerX" id="XEY-lw-lZC"/>
+                            <constraint firstItem="Glf-En-Z4U" firstAttribute="bottom" secondItem="r1P-gR-gzF" secondAttribute="bottom" id="c8G-3T-uEu"/>
+                            <constraint firstItem="pP5-sD-hM6" firstAttribute="trailing" secondItem="Glf-En-Z4U" secondAttribute="trailing" id="lB0-yT-25X"/>
+                            <constraint firstItem="pP5-sD-hM6" firstAttribute="top" secondItem="Glf-En-Z4U" secondAttribute="top" id="nKp-5V-9JA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Glf-En-Z4U"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewLeft" destination="bQB-aP-SkU" id="ztS-Fw-EZ9"/>
+                        <outlet property="imageViewRight" destination="hIZ-fS-RQ4" id="KBF-gm-hag"/>
+                        <outlet property="sceneView" destination="Wph-ER-ox0" id="ipc-03-H7e"/>
+                        <outlet property="sceneViewLeft" destination="eQS-WG-H2l" id="08J-vJ-f9f"/>
+                        <outlet property="sceneViewRight" destination="50A-nz-yJM" id="fGm-ZH-u3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3c-E8-DY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="elements" width="800" height="800"/>
+    </resources>
 </document>
