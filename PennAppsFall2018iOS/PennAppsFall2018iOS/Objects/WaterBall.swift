@@ -9,6 +9,7 @@ class WaterBall: SCNNode {
     
     let sphereGeometry: SCNSphere
     
+    
     // Required but unused
     required init?(coder aDecoder: NSCoder) {
         sphereGeometry = SCNSphere(radius: Sphere.radius)

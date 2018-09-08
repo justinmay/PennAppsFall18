@@ -109,22 +109,24 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             addSphere(position: pos)
             
             //ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
-            ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
+            ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3],position: getUserDirection())
         }
-        
-        if let cameraNode = self.sceneView.pointOfView {
-            
-            let distance: Float = 1.0 // Hardcoded depth
-            let pos = sceneSpacePosition(inFrontOf: cameraNode, atDistance: distance)
-            
-            addSphere(position: pos)
-            
-            //ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
-            ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
-        }
+
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapScreen))
+        self.view.addGestureRecognizer(tapRecognizer)
         
     }
     
+    @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
+            if let camera = sceneView.session.currentFrame?.camera {
+                var translation = matrix_identity_float4x4
+                translation.columns.3.z = -1.0
+                let transform = camera.transform * translation
+                let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+                addWaterBall(position: position)
+                ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
+            }
+    }
     
     //returns a SCNMatrix4 of the position
     func sceneSpacePosition(inFrontOf node: SCNNode, atDistance distance: Float) -> SCNVector3 {
@@ -134,18 +136,28 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         return scenePosition
     }
     func addWaterBall(position: SCNVector3){
-        print("adding sphere at point: \(position)")
-        let sphere: WaterBall = WaterBall(position: position)
         let water = SCNParticleSystem(named: "Water", inDirectory: nil)!
-        water.emitterShape = SCNCone(topRadius: 0.1,bottomRadius: 0.1,height: 0.1)
         water.emissionDuration = 2.0
         water.particleLifeSpan = 2.0
-        water.stretchFactor = 2.0
-        water.acceleration = SCNVector3(0,0,1.0)
-        //fire.dampingFactor = 1.0
-        //fire.isAffectedByGravity = true
+        
+        water.acceleration = getUserDirection()
+        
+        print("adding sphere at point: \(position)")
+        let sphere: WaterBall = WaterBall(position: position)
         sphere.addParticleSystem(water)
         self.sceneView.scene.rootNode.addChildNode(sphere)
+        ARHelperMethods.list.append(sphere)
+        
+    }
+    
+    func getUserDirection() -> (SCNVector3) { // (direction, position)
+        if let frame = self.sceneView.session.currentFrame {
+            let mat = SCNMatrix4(frame.camera.transform) // 4x4 transform matrix describing camera in world space
+            let dir = SCNVector3(-1 * mat.m31, -1 * mat.m32, -1 * mat.m33) // orientation of camera in world space
+
+            return (dir)
+        }
+        return (SCNVector3(0, 0, -1))
     }
     
     func addSphere(position: SCNVector3){

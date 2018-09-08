@@ -22,6 +22,7 @@ class Sphere: SCNNode {
         super.init()
         
         let sphereNode = SCNNode(geometry: self.sphereGeometry)
+        ARHelperMethods.list.append(sphereNode)
         sphereNode.position = position
         
         self.addChildNode(sphereNode)

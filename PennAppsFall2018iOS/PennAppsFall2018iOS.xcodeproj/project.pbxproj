@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBCBC88F21444EE70070DD33 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC88D21444EE70070DD33 /* spark.png */; };
+		CBCBC89021444EE70070DD33 /* Water.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC88E21444EE70070DD33 /* Water.scnp */; };
 		CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */; };
 		CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E5421435BCC007FAA0C /* ViewController.swift */; };
 		CBEA5E5821435BCC007FAA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E5621435BCC007FAA0C /* Main.storyboard */; };
@@ -19,8 +21,6 @@
 		CBEA5E8F2143FA33007FAA0C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E8D2143FA33007FAA0C /* spark.png */; };
 		CBEA5E902143FA33007FAA0C /* Fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E8E2143FA33007FAA0C /* Fire.scnp */; };
 		CBEA5E93214403C1007FAA0C /* FireBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E92214403C1007FAA0C /* FireBall.swift */; };
-		CBEA5E9721442E58007FAA0C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E9521442E58007FAA0C /* spark.png */; };
-		CBEA5E9821442E58007FAA0C /* Water.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E9621442E58007FAA0C /* Water.scnp */; };
 		CBEA5E9A21442FC4007FAA0C /* WaterBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E9921442FC4007FAA0C /* WaterBall.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBCBC88D21444EE70070DD33 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CBCBC88E21444EE70070DD33 /* Water.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Water.scnp; sourceTree = "<group>"; };
 		CBEA5E4F21435BCC007FAA0C /* PennAppsFall2018iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennAppsFall2018iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEA5E5421435BCC007FAA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +62,6 @@
 		CBEA5E8D2143FA33007FAA0C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		CBEA5E8E2143FA33007FAA0C /* Fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Fire.scnp; sourceTree = "<group>"; };
 		CBEA5E92214403C1007FAA0C /* FireBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBall.swift; sourceTree = "<group>"; };
-		CBEA5E9521442E58007FAA0C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		CBEA5E9621442E58007FAA0C /* Water.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Water.scnp; sourceTree = "<group>"; };
 		CBEA5E9921442FC4007FAA0C /* WaterBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBCBC88C21444ED30070DD33 /* Water */ = {
+			isa = PBXGroup;
+			children = (
+				CBCBC88D21444EE70070DD33 /* spark.png */,
+				CBCBC88E21444EE70070DD33 /* Water.scnp */,
+			);
+			path = Water;
+			sourceTree = "<group>";
+		};
 		CBEA5E4621435BCC007FAA0C = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +122,7 @@
 		CBEA5E5121435BCC007FAA0C /* PennAppsFall2018iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA5E9421442E2C007FAA0C /* Water */,
+				CBCBC88C21444ED30070DD33 /* Water */,
 				CBEA5E91214403A7007FAA0C /* Objects */,
 				CBEA5E8C2143F9FE007FAA0C /* Fire */,
 				CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */,
@@ -162,15 +171,6 @@
 				CBEA5E9921442FC4007FAA0C /* WaterBall.swift */,
 			);
 			path = Objects;
-			sourceTree = "<group>";
-		};
-		CBEA5E9421442E2C007FAA0C /* Water */ = {
-			isa = PBXGroup;
-			children = (
-				CBEA5E9521442E58007FAA0C /* spark.png */,
-				CBEA5E9621442E58007FAA0C /* Water.scnp */,
-			);
-			path = Water;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,11 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBEA5E5D21435BCE007FAA0C /* LaunchScreen.storyboard in Resources */,
+				CBCBC89021444EE70070DD33 /* Water.scnp in Resources */,
+				CBCBC88F21444EE70070DD33 /* spark.png in Resources */,
 				CBEA5E8F2143FA33007FAA0C /* spark.png in Resources */,
 				CBEA5E5A21435BCE007FAA0C /* Assets.xcassets in Resources */,
-				CBEA5E9721442E58007FAA0C /* spark.png in Resources */,
 				CBEA5E902143FA33007FAA0C /* Fire.scnp in Resources */,
-				CBEA5E9821442E58007FAA0C /* Water.scnp in Resources */,
 				CBEA5E5821435BCC007FAA0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
