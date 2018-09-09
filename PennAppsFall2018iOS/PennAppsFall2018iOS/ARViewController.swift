@@ -35,6 +35,24 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
     //    let eyeFOV = 90; var cameraImageScale = 6; // (Scale: 6 ± 1.0) Very Rough Guestimate.
     //    let eyeFOV = 120; var cameraImageScale = 8.756; // Rough Guestimate.
     
+    static func moveReceived(move: String){
+        print("Received: \(move)")
+        switch move {
+        case "water":
+            print("Water Attack")
+        case "fire":
+            print("Fire Attack")
+        case "air":
+            print("Water Attack")
+        case "earthL":
+            print("Left Earth Attack")
+        case "earthR":
+            print("Right Earth Attack")
+        default:
+            print("No Attack option")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

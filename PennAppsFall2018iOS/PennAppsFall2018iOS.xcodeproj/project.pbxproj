@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8475B5B2144F0EF00EE2A93 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8475B5A2144F0EF00EE2A93 /* SocketIOManager.swift */; };
 		CBCBC88F21444EE70070DD33 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC88D21444EE70070DD33 /* spark.png */; };
 		CBCBC89021444EE70070DD33 /* Water.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC88E21444EE70070DD33 /* Water.scnp */; };
 		CBCBC89321446C570070DD33 /* rock.dae in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC89221446C570070DD33 /* rock.dae */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8475B5A2144F0EF00EE2A93 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		CBCBC88D21444EE70070DD33 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		CBCBC88E21444EE70070DD33 /* Water.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Water.scnp; sourceTree = "<group>"; };
 		CBCBC89221446C570070DD33 /* rock.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = rock.dae; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				CBEA5E5921435BCE007FAA0C /* Assets.xcassets */,
 				CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */,
 				CBEA5E5E21435BCE007FAA0C /* Info.plist */,
+				A8475B5A2144F0EF00EE2A93 /* SocketIOManager.swift */,
 			);
 			path = PennAppsFall2018iOS;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				CBCBC89B21448FCC0070DD33 /* WindMill.swift in Sources */,
 				CBCBC89521446F0C0070DD33 /* Rock.swift in Sources */,
 				CBEA5E8121435D01007FAA0C /* ARViewController.swift in Sources */,
+				A8475B5B2144F0EF00EE2A93 /* SocketIOManager.swift in Sources */,
 				CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */,
 				CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */,
 				CBEA5E8921438750007FAA0C /* ARHelperMethods.swift in Sources */,
@@ -527,7 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				DEVELOPMENT_TEAM = G3C7HTN75X;
 				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,7 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				DEVELOPMENT_TEAM = G3C7HTN75X;
 				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

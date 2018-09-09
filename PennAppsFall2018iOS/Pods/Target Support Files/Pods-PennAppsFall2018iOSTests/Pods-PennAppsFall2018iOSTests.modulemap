@@ -1,0 +1,6 @@
+framework module Pods_PennAppsFall2018iOSTests {
+  umbrella header "Pods-PennAppsFall2018iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
