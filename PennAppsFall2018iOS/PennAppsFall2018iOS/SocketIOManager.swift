@@ -15,28 +15,31 @@ typealias JSON = [String: Any]
 class SocketIOManager: NSObject {
     static let sharedInstance = SocketIOManager()
     
-    var manager : SocketManager!
-    var socket : SocketIOClient!
+    var manager : SocketManager = {
+        return SocketManager(socketURL: URL(string: "http://15ea163c.ngrok.io")!, config: [.log(false), .forcePolling(true)])
+    }()
     
     override init() {
         super.init()
-        
-        manager = SocketManager(socketURL: URL(string: "http://8285b8ff.ngrok.io")!, config: [.log(false), .forcePolling(true)])
-        socket = manager.defaultSocket
-        socket.on("test") { dataArray, ack in
+    }
+    
+    func setSocketHandler(){
+        manager.defaultSocket.on("test") { dataArray, ack in
             let moveDict = (dataArray[0] as! JSON)
             let movez = moveDict["move"] as! String
-            ARViewController.moveReceived(move: movez)
+            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: movez), object: nil)
+            
+            //self.moveReceived(move: movez)
         }
-        
     }
     
     func establishConnection() {
-        socket.connect()
-        print("Status: \(socket.status.description)")
+        manager.defaultSocket.connect()
+        print("Status: \(manager.defaultSocket.status.description)")
     }
     
     func closeConnection() {
-        socket.disconnect()
+        manager.defaultSocket.disconnect()
     }
 }

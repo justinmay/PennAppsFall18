@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102085543C476813D4A7DE46 /* Pods_PennAppsFall2018iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26C76A1BC611A382A3F22BC /* Pods_PennAppsFall2018iOSUITests.framework */; };
+		5F00EA3A0C4332CB0A54DB85 /* Pods_PennAppsFall2018iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E0908CF9AE9B970A1C5334 /* Pods_PennAppsFall2018iOSTests.framework */; };
 		A8475B5B2144F0EF00EE2A93 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8475B5A2144F0EF00EE2A93 /* SocketIOManager.swift */; };
 		CBCBC88F21444EE70070DD33 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC88D21444EE70070DD33 /* spark.png */; };
 		CBCBC89021444EE70070DD33 /* Water.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC88E21444EE70070DD33 /* Water.scnp */; };
@@ -29,6 +31,7 @@
 		CBEA5E902143FA33007FAA0C /* Fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E8E2143FA33007FAA0C /* Fire.scnp */; };
 		CBEA5E93214403C1007FAA0C /* FireBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E92214403C1007FAA0C /* FireBall.swift */; };
 		CBEA5E9A21442FC4007FAA0C /* WaterBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E9921442FC4007FAA0C /* WaterBall.swift */; };
+		DA05AD5E49D39C2DE6206FBE /* Pods_PennAppsFall2018iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2745F5E6EFF80F9159FEDDA8 /* Pods_PennAppsFall2018iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF9F84636229013586906F8 /* Pods-PennAppsFall2018iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOSTests/Pods-PennAppsFall2018iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2745F5E6EFF80F9159FEDDA8 /* Pods_PennAppsFall2018iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennAppsFall2018iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E407C0697E5BA2CDCA0DB96 /* Pods-PennAppsFall2018iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOS/Pods-PennAppsFall2018iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A3E0908CF9AE9B970A1C5334 /* Pods_PennAppsFall2018iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennAppsFall2018iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8475B5A2144F0EF00EE2A93 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		AD55C5D923AF5DB52B11CCFA /* Pods-PennAppsFall2018iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOSTests/Pods-PennAppsFall2018iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA4EECA193C5CC914A9F7681 /* Pods-PennAppsFall2018iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOSUITests/Pods-PennAppsFall2018iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBCBC88D21444EE70070DD33 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		CBCBC88E21444EE70070DD33 /* Water.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Water.scnp; sourceTree = "<group>"; };
 		CBCBC89221446C570070DD33 /* rock.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = rock.dae; sourceTree = "<group>"; };
@@ -77,6 +86,9 @@
 		CBEA5E8E2143FA33007FAA0C /* Fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Fire.scnp; sourceTree = "<group>"; };
 		CBEA5E92214403C1007FAA0C /* FireBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBall.swift; sourceTree = "<group>"; };
 		CBEA5E9921442FC4007FAA0C /* WaterBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBall.swift; sourceTree = "<group>"; };
+		D165B5293FB5DE762589AA59 /* Pods-PennAppsFall2018iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOS/Pods-PennAppsFall2018iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D26C76A1BC611A382A3F22BC /* Pods_PennAppsFall2018iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennAppsFall2018iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D65229B30136792AB01AE4 /* Pods-PennAppsFall2018iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOSUITests/Pods-PennAppsFall2018iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA05AD5E49D39C2DE6206FBE /* Pods_PennAppsFall2018iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F00EA3A0C4332CB0A54DB85 /* Pods_PennAppsFall2018iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +112,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102085543C476813D4A7DE46 /* Pods_PennAppsFall2018iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D351C86A3EDA3EF3C4F5128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D165B5293FB5DE762589AA59 /* Pods-PennAppsFall2018iOS.debug.xcconfig */,
+				9E407C0697E5BA2CDCA0DB96 /* Pods-PennAppsFall2018iOS.release.xcconfig */,
+				AD55C5D923AF5DB52B11CCFA /* Pods-PennAppsFall2018iOSTests.debug.xcconfig */,
+				0CF9F84636229013586906F8 /* Pods-PennAppsFall2018iOSTests.release.xcconfig */,
+				CA4EECA193C5CC914A9F7681 /* Pods-PennAppsFall2018iOSUITests.debug.xcconfig */,
+				E1D65229B30136792AB01AE4 /* Pods-PennAppsFall2018iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A562A23CDE0EC7124F8C93B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2745F5E6EFF80F9159FEDDA8 /* Pods_PennAppsFall2018iOS.framework */,
+				A3E0908CF9AE9B970A1C5334 /* Pods_PennAppsFall2018iOSTests.framework */,
+				D26C76A1BC611A382A3F22BC /* Pods_PennAppsFall2018iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBCBC88C21444ED30070DD33 /* Water */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +176,8 @@
 				CBEA5E6621435BCE007FAA0C /* PennAppsFall2018iOSTests */,
 				CBEA5E7121435BCE007FAA0C /* PennAppsFall2018iOSUITests */,
 				CBEA5E5021435BCC007FAA0C /* Products */,
+				3D351C86A3EDA3EF3C4F5128 /* Pods */,
+				7A562A23CDE0EC7124F8C93B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBEA5E7721435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOS" */;
 			buildPhases = (
+				7EA74BAFC70E2F007497EAC0 /* [CP] Check Pods Manifest.lock */,
 				CBEA5E4B21435BCC007FAA0C /* Sources */,
 				CBEA5E4C21435BCC007FAA0C /* Frameworks */,
 				CBEA5E4D21435BCC007FAA0C /* Resources */,
+				5ED9BB82101939798604CA7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBEA5E7A21435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOSTests" */;
 			buildPhases = (
+				5C4982CD0298BAFF3426129A /* [CP] Check Pods Manifest.lock */,
 				CBEA5E5F21435BCE007FAA0C /* Sources */,
 				CBEA5E6021435BCE007FAA0C /* Frameworks */,
 				CBEA5E6121435BCE007FAA0C /* Resources */,
@@ -252,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBEA5E7D21435BCE007FAA0C /* Build configuration list for PBXNativeTarget "PennAppsFall2018iOSUITests" */;
 			buildPhases = (
+				6143EEDCFBB6EE8DDA76CE86 /* [CP] Check Pods Manifest.lock */,
 				CBEA5E6A21435BCE007FAA0C /* Sources */,
 				CBEA5E6B21435BCE007FAA0C /* Frameworks */,
 				CBEA5E6C21435BCE007FAA0C /* Resources */,
@@ -343,6 +387,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C4982CD0298BAFF3426129A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PennAppsFall2018iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED9BB82101939798604CA7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PennAppsFall2018iOS/Pods-PennAppsFall2018iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PennAppsFall2018iOS/Pods-PennAppsFall2018iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6143EEDCFBB6EE8DDA76CE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PennAppsFall2018iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA74BAFC70E2F007497EAC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PennAppsFall2018iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBEA5E4B21435BCC007FAA0C /* Sources */ = {
@@ -528,15 +651,13 @@
 		};
 		CBEA5E7821435BCE007FAA0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D165B5293FB5DE762589AA59 /* Pods-PennAppsFall2018iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G3C7HTN75X;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -546,15 +667,13 @@
 		};
 		CBEA5E7921435BCE007FAA0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E407C0697E5BA2CDCA0DB96 /* Pods-PennAppsFall2018iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G3C7HTN75X;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -564,17 +683,14 @@
 		};
 		CBEA5E7B21435BCE007FAA0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD55C5D923AF5DB52B11CCFA /* Pods-PennAppsFall2018iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = PennAppsFall2018iOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -585,17 +701,14 @@
 		};
 		CBEA5E7C21435BCE007FAA0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF9F84636229013586906F8 /* Pods-PennAppsFall2018iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = PennAppsFall2018iOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -606,16 +719,13 @@
 		};
 		CBEA5E7E21435BCE007FAA0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4EECA193C5CC914A9F7681 /* Pods-PennAppsFall2018iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = PennAppsFall2018iOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -626,16 +736,13 @@
 		};
 		CBEA5E7F21435BCE007FAA0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D65229B30136792AB01AE4 /* Pods-PennAppsFall2018iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = PennAppsFall2018iOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PennAppsFall2018iOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

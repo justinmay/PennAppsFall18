@@ -12,6 +12,8 @@ import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate  {
 
+    let socketManager: SocketIOManager = .sharedInstance
+    
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var sceneViewLeft: ARSCNView!
     @IBOutlet weak var sceneViewRight: ARSCNView!
@@ -35,26 +37,16 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
     //    let eyeFOV = 90; var cameraImageScale = 6; // (Scale: 6 ± 1.0) Very Rough Guestimate.
     //    let eyeFOV = 120; var cameraImageScale = 8.756; // Rough Guestimate.
     
-    static func moveReceived(move: String){
-        print("Received: \(move)")
-        switch move {
-        case "water":
-            print("Water Attack")
-        case "fire":
-            print("Fire Attack")
-        case "air":
-            print("Water Attack")
-        case "earthL":
-            print("Left Earth Attack")
-        case "earthR":
-            print("Right Earth Attack")
-        default:
-            print("No Attack option")
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(wattaAttac), name: NSNotification.Name(rawValue: "water"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(fireOrBFired), name: NSNotification.Name(rawValue: "fire"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(aang), name: NSNotification.Name(rawValue: "air"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(dwaneLokAttac), name: NSNotification.Name(rawValue: "earthl"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(dwaneRokAttac), name: NSNotification.Name(rawValue: "earthr"), object: nil)
+        socketManager.setSocketHandler()
+        socketManager.establishConnection()
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -132,28 +124,40 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3],position: getUserDirection())
         }
 
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapScreen))
-        self.view.addGestureRecognizer(tapRecognizer)
+        //let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapScreen))
+        //self.view.addGestureRecognizer(tapRecognizer)
         
     }
     
-    /*
-     // THIS IS TAP FOR WATER
-    @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
-            if let camera = sceneView.session.currentFrame?.camera {
-                var translation = matrix_identity_float4x4
-                translation.columns.3.z = -1.0
-                let transform = camera.transform * translation
-                let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
-                addWaterBall(position: position)
-                ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
-            }
+    //water
+    @objc func wattaAttac() {
+        print("water")
+        if let camera = sceneView.session.currentFrame?.camera {
+            var translation = matrix_identity_float4x4
+            translation.columns.3.z = -1.0
+            let transform = camera.transform * translation
+            let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+            addWaterBall(position: position)
+            ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
+        }
     }
-    */
     
-    /*
-    //Tap for Rocks
-    @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
+    //fire
+    @objc func fireOrBFired() {
+        print("fire")
+        if let camera = sceneView.session.currentFrame?.camera {
+            var translation = matrix_identity_float4x4
+            translation.columns.3.z = -1.0
+            let transform = camera.transform * translation
+            let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+            addWaterBall(position: position)
+            ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
+        }
+    }
+    
+    //Tap for Rocks L
+    @objc func dwaneLokAttac() {
+        print("rock right")
         if let camera = sceneView.session.currentFrame?.camera {
             //grab LR value
             let LR = "L"
@@ -161,25 +165,40 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             //identifying position
             var translation = matrix_identity_float4x4
             translation.columns.3.z = -1.0
-            let transform = camera.transform * translation
-            let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
-            
             //adding a rock
             let rockposition = addRock(LR: LR)
             //ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
             ARHelperMethods.addAnimationRocks(node: ARHelperMethods.getLastElement(), position: rockposition)
         }
     }
-    */
     
-    //Tap for Air
-    @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
+    //Tap for Rock R
+    @objc func dwaneRokAttac() {
+        print("rock right")
         if let camera = sceneView.session.currentFrame?.camera {
+            //grab LR value
+            let LR = "R"
             
             //identifying position
             var translation = matrix_identity_float4x4
             translation.columns.3.z = -1.0
             let transform = camera.transform * translation
+            //adding a rock
+            let rockposition = addRock(LR: LR)
+            //ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
+            ARHelperMethods.addAnimationRocks(node: ARHelperMethods.getLastElement(), position: rockposition)
+        }
+    }
+    
+    
+    //Tap for Air
+    @objc func aang() {
+        print("air")
+        if let camera = sceneView.session.currentFrame?.camera {
+            
+            //identifying position
+            var translation = matrix_identity_float4x4
+            translation.columns.3.z = -1.0
             let airposition = addAir()
             //ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
             ARHelperMethods.addAnimationRocks(node: ARHelperMethods.getLastElement(), position: airposition)
@@ -214,11 +233,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         }
         if LR == "R" {
             var left = direction
-            let temp = left.y
-            left.y = left.x
+            let temp = left.z
+            left.z = left.x
             left.x = -1 * temp
-            left.x *= lrScalar; left.y *= lrScalar
-            middle.x += left.x; middle.y += left.y;
+            left.x *= lrScalar; left.z *= lrScalar
+            middle.x += left.x; middle.z += left.z;
         }
         let rockScene = SCNScene(named: "rock.dae")!
         let tempNode = rockScene.rootNode.childNode(withName: "Rock", recursively: true)!

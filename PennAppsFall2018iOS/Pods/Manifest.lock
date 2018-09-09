@@ -10,7 +10,7 @@ DEPENDENCIES:
   - Starscream
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Socket.IO-Client-Swift
     - Starscream
@@ -22,4 +22,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: abf2bbbfe2b7c42831d1019fd728e302b0fee1ba
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2
