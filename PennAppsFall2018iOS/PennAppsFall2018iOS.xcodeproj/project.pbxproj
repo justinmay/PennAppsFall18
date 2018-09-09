@@ -18,6 +18,17 @@
 		CBCBC89D2144C6A20070DD33 /* WindMill.dae in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC89C2144C6A20070DD33 /* WindMill.dae */; };
 		CBCBC8A12144DE400070DD33 /* cloud.dae in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC8A02144DE400070DD33 /* cloud.dae */; };
 		CBCBC8A32144E8810070DD33 /* monkey.dae in Resources */ = {isa = PBXBuildFile; fileRef = CBCBC8A22144E8810070DD33 /* monkey.dae */; };
+		CBCBC8A6214524560070DD33 /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCBC8A4214524550070DD33 /* SCSDKCreativeKit.framework */; };
+		CBCBC8A7214524560070DD33 /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCBC8A5214524560070DD33 /* SCSDKCoreKit.framework */; };
+		CBCBC8A8214524DE0070DD33 /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCBC8A5214524560070DD33 /* SCSDKCoreKit.framework */; };
+		CBCBC8A9214524DE0070DD33 /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBCBC8A5214524560070DD33 /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBCBC8AA214524DE0070DD33 /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCBC8A4214524550070DD33 /* SCSDKCreativeKit.framework */; };
+		CBCBC8AB214524DE0070DD33 /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBCBC8A4214524550070DD33 /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBCBC8AE2145345C0070DD33 /* Welcome1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBC8AD2145345C0070DD33 /* Welcome1ViewController.swift */; };
+		CBCBC8B0214535610070DD33 /* Welcome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBC8AF214535610070DD33 /* Welcome2ViewController.swift */; };
+		CBCBC8B2214537300070DD33 /* Welcome3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBC8B1214537300070DD33 /* Welcome3ViewController.swift */; };
+		CBCBC8B4214537390070DD33 /* Welcome4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBC8B3214537390070DD33 /* Welcome4ViewController.swift */; };
+		CBCBC8B6214537460070DD33 /* Welcome5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBC8B5214537460070DD33 /* Welcome5ViewController.swift */; };
 		CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */; };
 		CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA5E5421435BCC007FAA0C /* ViewController.swift */; };
 		CBEA5E5821435BCC007FAA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA5E5621435BCC007FAA0C /* Main.storyboard */; };
@@ -51,6 +62,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CBCBC8AC214524DE0070DD33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBCBC8A9214524DE0070DD33 /* SCSDKCoreKit.framework in Embed Frameworks */,
+				CBCBC8AB214524DE0070DD33 /* SCSDKCreativeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0CF9F84636229013586906F8 /* Pods-PennAppsFall2018iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PennAppsFall2018iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PennAppsFall2018iOSTests/Pods-PennAppsFall2018iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		2745F5E6EFF80F9159FEDDA8 /* Pods_PennAppsFall2018iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PennAppsFall2018iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +93,13 @@
 		CBCBC89C2144C6A20070DD33 /* WindMill.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = WindMill.dae; sourceTree = "<group>"; };
 		CBCBC8A02144DE400070DD33 /* cloud.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = cloud.dae; sourceTree = "<group>"; };
 		CBCBC8A22144E8810070DD33 /* monkey.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = monkey.dae; sourceTree = "<group>"; };
+		CBCBC8A4214524550070DD33 /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
+		CBCBC8A5214524560070DD33 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		CBCBC8AD2145345C0070DD33 /* Welcome1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome1ViewController.swift; sourceTree = "<group>"; };
+		CBCBC8AF214535610070DD33 /* Welcome2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome2ViewController.swift; sourceTree = "<group>"; };
+		CBCBC8B1214537300070DD33 /* Welcome3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome3ViewController.swift; sourceTree = "<group>"; };
+		CBCBC8B3214537390070DD33 /* Welcome4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome4ViewController.swift; sourceTree = "<group>"; };
+		CBCBC8B5214537460070DD33 /* Welcome5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome5ViewController.swift; sourceTree = "<group>"; };
 		CBEA5E4F21435BCC007FAA0C /* PennAppsFall2018iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennAppsFall2018iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEA5E5221435BCC007FAA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEA5E5421435BCC007FAA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +129,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCBC8AA214524DE0070DD33 /* SCSDKCreativeKit.framework in Frameworks */,
 				DA05AD5E49D39C2DE6206FBE /* Pods_PennAppsFall2018iOS.framework in Frameworks */,
+				CBCBC8A6214524560070DD33 /* SCSDKCreativeKit.framework in Frameworks */,
+				CBCBC8A7214524560070DD33 /* SCSDKCoreKit.framework in Frameworks */,
+				CBCBC8A8214524DE0070DD33 /* SCSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +172,8 @@
 		7A562A23CDE0EC7124F8C93B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBCBC8A5214524560070DD33 /* SCSDKCoreKit.framework */,
+				CBCBC8A4214524550070DD33 /* SCSDKCreativeKit.framework */,
 				2745F5E6EFF80F9159FEDDA8 /* Pods_PennAppsFall2018iOS.framework */,
 				A3E0908CF9AE9B970A1C5334 /* Pods_PennAppsFall2018iOSTests.framework */,
 				D26C76A1BC611A382A3F22BC /* Pods_PennAppsFall2018iOSUITests.framework */,
@@ -208,6 +247,11 @@
 				CBEA5E5921435BCE007FAA0C /* Assets.xcassets */,
 				CBEA5E5B21435BCE007FAA0C /* LaunchScreen.storyboard */,
 				CBEA5E5E21435BCE007FAA0C /* Info.plist */,
+				CBCBC8AD2145345C0070DD33 /* Welcome1ViewController.swift */,
+				CBCBC8AF214535610070DD33 /* Welcome2ViewController.swift */,
+				CBCBC8B1214537300070DD33 /* Welcome3ViewController.swift */,
+				CBCBC8B3214537390070DD33 /* Welcome4ViewController.swift */,
+				CBCBC8B5214537460070DD33 /* Welcome5ViewController.swift */,
 			);
 			path = PennAppsFall2018iOS;
 			sourceTree = "<group>";
@@ -262,6 +306,7 @@
 				CBEA5E4C21435BCC007FAA0C /* Frameworks */,
 				CBEA5E4D21435BCC007FAA0C /* Resources */,
 				5ED9BB82101939798604CA7A /* [CP] Embed Pods Frameworks */,
+				CBCBC8AC214524DE0070DD33 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,12 +460,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PennAppsFall2018iOS/Pods-PennAppsFall2018iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
@@ -473,12 +520,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBEA5E9A21442FC4007FAA0C /* WaterBall.swift in Sources */,
+				CBCBC8B4214537390070DD33 /* Welcome4ViewController.swift in Sources */,
+				CBCBC8B2214537300070DD33 /* Welcome3ViewController.swift in Sources */,
 				CBCBC89B21448FCC0070DD33 /* WindMill.swift in Sources */,
 				CBCBC89521446F0C0070DD33 /* Rock.swift in Sources */,
 				CBEA5E8121435D01007FAA0C /* ARViewController.swift in Sources */,
 				A8475B5B2144F0EF00EE2A93 /* SocketIOManager.swift in Sources */,
 				CBEA5E5521435BCC007FAA0C /* ViewController.swift in Sources */,
+				CBCBC8B0214535610070DD33 /* Welcome2ViewController.swift in Sources */,
 				CBEA5E5321435BCC007FAA0C /* AppDelegate.swift in Sources */,
+				CBCBC8AE2145345C0070DD33 /* Welcome1ViewController.swift in Sources */,
+				CBCBC8B6214537460070DD33 /* Welcome5ViewController.swift in Sources */,
 				CBEA5E8921438750007FAA0C /* ARHelperMethods.swift in Sources */,
 				CBEA5E93214403C1007FAA0C /* FireBall.swift in Sources */,
 			);
@@ -656,8 +708,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
@@ -675,6 +735,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PennAppsFall2018iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

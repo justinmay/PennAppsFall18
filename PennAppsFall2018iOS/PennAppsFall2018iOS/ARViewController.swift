@@ -9,6 +9,8 @@
 import UIKit
 import SceneKit
 import ARKit
+import SCSDKCreativeKit
+
 
 class ARViewController: UIViewController, ARSCNViewDelegate  {
 
@@ -47,6 +49,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         NotificationCenter.default.addObserver(self, selector: #selector(dwaneLokAttac), name: NSNotification.Name(rawValue: "earthl"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(dwaneRokAttac), name: NSNotification.Name(rawValue: "earthr"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(done), name: NSNotification.Name(rawValue: "done"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(snapActivated), name: NSNotification.Name(rawValue: "snap"), object: nil)
         
         socketManager.setSocketHandler()
         socketManager.establishConnection()
@@ -464,6 +467,45 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         self.imageViewRight.image = uiimage
     }
     
+    @objc func snapActivated(){
+        let snapImage = screenshot()
+        let photo = SCSDKSnapPhoto(image: snapImage!)
+        let photoContent = SCSDKPhotoSnapContent(snapPhoto: photo)
+        
+        let api = SCSDKSnapAPI(content: photoContent)
+        api.startSnapping { error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+                print(error)
+            } else {
+                print("successfully did snapchat")
+            }
+        }
+    }
+    
+    /*
+    func screenshot() -> UIImage{
+        //Create the UIImage
+        let renderer = UIGraphicsImageRenderer(size: view.frame.size)
+        let image = renderer.image(actions: { context in
+            view.layer.render(in: context.cgContext)
+        })
+        return image
+    }
+    */
+    
+    open func screenshot() -> UIImage? {
+        var screenshotImage :UIImage?
+        let layer = UIApplication.shared.keyWindow!.layer
+        let scale = UIScreen.main.scale
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+        guard let context = UIGraphicsGetCurrentContext() else {return nil}
+        layer.render(in:context)
+        screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return screenshotImage
+    }
     
    
  

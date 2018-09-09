@@ -48,7 +48,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="7mH-07-bMW" kind="show" id="lcb-qj-1ta"/>
+                                    <segue destination="3go-dE-tlI" kind="show" id="Vmd-tz-dyq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,6 +67,202 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="156" y="33.733133433283363"/>
+        </scene>
+        <!--Welcome1 View Controller-->
+        <scene sceneID="bmw-cx-sy8">
+            <objects>
+                <viewController id="3go-dE-tlI" customClass="Welcome1ViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E5D-tQ-POI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astate" translatesAutoresizingMaskIntoConstraints="NO" id="Ztd-Hl-xBL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNJ-1n-ear">
+                                <rect key="frame" x="-2" y="373" width="377" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Only the Avatar can master all 4 elements">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ztd-Hl-xBL" firstAttribute="leading" secondItem="PDT-w2-R3S" secondAttribute="leading" id="J0H-Jg-K4D"/>
+                            <constraint firstItem="PDT-w2-R3S" firstAttribute="trailing" secondItem="Ztd-Hl-xBL" secondAttribute="trailing" id="aiK-T1-5Jw"/>
+                            <constraint firstItem="PDT-w2-R3S" firstAttribute="bottom" secondItem="Ztd-Hl-xBL" secondAttribute="bottom" id="ffk-6g-SJp"/>
+                            <constraint firstItem="Ztd-Hl-xBL" firstAttribute="top" secondItem="E5D-tQ-POI" secondAttribute="top" id="gSR-BU-lJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PDT-w2-R3S"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcome1text" destination="VNJ-1n-ear" id="x2J-9Z-VqL"/>
+                        <segue destination="y0J-BW-uZa" kind="presentation" identifier="welcome1to2segue" id="9L6-ga-pJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpL-av-4YZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="34"/>
+        </scene>
+        <!--Welcome2 View Controller-->
+        <scene sceneID="AJi-40-bWf">
+            <objects>
+                <viewController id="y0J-BW-uZa" customClass="Welcome2ViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ew5-GX-5ve">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XE-yK-XHt">
+                                <rect key="frame" x="90" y="284" width="195.5" height="99"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Water">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="72" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51665153835085464" green="0.91504317805455471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8XE-yK-XHt" firstAttribute="centerX" secondItem="Ew5-GX-5ve" secondAttribute="centerX" id="Fib-N3-OlK"/>
+                            <constraint firstItem="8XE-yK-XHt" firstAttribute="centerY" secondItem="Ew5-GX-5ve" secondAttribute="centerY" id="R16-Fa-Pla"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SC1-SB-wjH"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcome2text" destination="8XE-yK-XHt" id="ZDH-8v-iWg"/>
+                        <segue destination="o0M-hP-JwS" kind="presentation" identifier="welcome2to3segue" id="RQs-Vo-6lV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7v-sR-Zw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="34"/>
+        </scene>
+        <!--Welcome3 View Controller-->
+        <scene sceneID="1AP-js-7Bl">
+            <objects>
+                <viewController id="o0M-hP-JwS" customClass="Welcome3ViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x3q-X5-Ruh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAo-04-Rbn">
+                                <rect key="frame" x="102" y="284" width="171" height="99"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Earth">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="72" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FAo-04-Rbn" firstAttribute="centerX" secondItem="x3q-X5-Ruh" secondAttribute="centerX" id="Fde-In-8le"/>
+                            <constraint firstItem="FAo-04-Rbn" firstAttribute="centerY" secondItem="x3q-X5-Ruh" secondAttribute="centerY" id="zKw-TF-wZQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0jQ-u7-LBb"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcome3text" destination="FAo-04-Rbn" id="thQ-4v-I6Y"/>
+                        <segue destination="lxY-EX-ywt" kind="presentation" identifier="welcome3to4segue" id="k3l-Ub-eO2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04J-DF-0pX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="41"/>
+        </scene>
+        <!--Welcome4 View Controller-->
+        <scene sceneID="35t-4C-a4L">
+            <objects>
+                <viewController id="lxY-EX-ywt" customClass="Welcome4ViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5R1-GD-24y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfU-Jv-SGG">
+                                <rect key="frame" x="126" y="284" width="123" height="99"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fire">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="72" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sfU-Jv-SGG" firstAttribute="centerY" secondItem="5R1-GD-24y" secondAttribute="centerY" id="EJ3-QV-3Yl"/>
+                            <constraint firstItem="sfU-Jv-SGG" firstAttribute="centerX" secondItem="5R1-GD-24y" secondAttribute="centerX" id="pdB-X9-bFL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9xT-xi-6Sg"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcome4text" destination="sfU-Jv-SGG" id="tuE-1P-gEv"/>
+                        <segue destination="PTx-Ow-35c" kind="presentation" identifier="welcome4to5segue" id="h0t-4d-b60"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3t3-6f-2Qe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2975" y="48"/>
+        </scene>
+        <!--Welcome5 View Controller-->
+        <scene sceneID="8fp-Od-W9t">
+            <objects>
+                <viewController id="PTx-Ow-35c" customClass="Welcome5ViewController" customModule="PennAppsFall2018iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HsK-vz-RCD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC1-yU-cux">
+                                <rect key="frame" x="140" y="284" width="95" height="99"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Air">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="72" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bC1-yU-cux" firstAttribute="centerY" secondItem="HsK-vz-RCD" secondAttribute="centerY" id="KyJ-fc-o9D"/>
+                            <constraint firstItem="bC1-yU-cux" firstAttribute="centerX" secondItem="HsK-vz-RCD" secondAttribute="centerX" id="cRX-0S-L1w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gWx-2r-INH"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcome5text" destination="bC1-yU-cux" id="jlC-W6-9eX"/>
+                        <segue destination="rMM-ub-TmK" kind="presentation" identifier="finalsegue" id="hMa-hZ-jdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvJ-xZ-0P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3671" y="47"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aRl-we-xfl">
@@ -140,10 +336,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3c-E8-DY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556" y="34"/>
+            <point key="canvasLocation" x="5054" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vz9-sN-5iw">
+            <objects>
+                <viewController id="rMM-ub-TmK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RUW-ZJ-k7K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controls" translatesAutoresizingMaskIntoConstraints="NO" id="j14-4P-x85">
+                                <rect key="frame" x="16" y="137" width="343" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Uxe-tZ-6hi"/>
+                                    <constraint firstAttribute="height" constant="393" id="xVO-lM-uU9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUc-li-Voj">
+                                <rect key="frame" x="121" y="65" width="133" height="100"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start">
+                                            <attributes>
+                                                <font key="NSFont" size="64" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="7mH-07-bMW" kind="show" id="6RD-Ik-AW8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j14-4P-x85" firstAttribute="centerX" secondItem="RUW-ZJ-k7K" secondAttribute="centerX" id="5V5-9q-zMv"/>
+                            <constraint firstItem="RUc-li-Voj" firstAttribute="top" secondItem="ePs-oj-4nV" secondAttribute="top" constant="45" id="5lT-YD-TTj"/>
+                            <constraint firstItem="RUc-li-Voj" firstAttribute="centerX" secondItem="RUW-ZJ-k7K" secondAttribute="centerX" id="cB6-qk-maA"/>
+                            <constraint firstItem="j14-4P-x85" firstAttribute="centerY" secondItem="RUW-ZJ-k7K" secondAttribute="centerY" id="ru2-gB-2g5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePs-oj-4nV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4p-2G-U6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4375" y="34"/>
         </scene>
     </scenes>
     <resources>
+        <image name="astate" width="288" height="450"/>
+        <image name="controls" width="1500" height="2352"/>
         <image name="elements" width="800" height="800"/>
         <image name="uy301g6k38a01" width="1229" height="465"/>
     </resources>

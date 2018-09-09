@@ -9,6 +9,7 @@ target 'PennAppsFall2018iOS' do
   pod 'Socket.IO-Client-Swift'
   pod 'Alamofire'
   pod 'Starscream'
+  pod 'SnapKit', '~> 4.0'
 
   target 'PennAppsFall2018iOSTests' do
     inherit! :search_paths
