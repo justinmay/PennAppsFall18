@@ -34,8 +34,6 @@ class ARHelperMethods{
         let animateOne = SCNAction.moveBy(x: CGFloat(x), y: CGFloat(y), z: CGFloat(z), duration: 5.0)
         let removeFrom = SCNAction.removeFromParentNode()
         let sequence = SCNAction.sequence([animateOne, removeFrom])
-        //let rotateOne = SCNAction.rotateBy(x: 0, y: CGFloat(Float.pi), z: 0, duration: 10.0)
-        //node.runAction(rotateOne)
         node.runAction(sequence)
     }
     

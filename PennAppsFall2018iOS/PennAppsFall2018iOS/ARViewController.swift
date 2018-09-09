@@ -12,6 +12,7 @@ import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate  {
 
+    @IBOutlet weak var wastedImage: UIImageView!
     let socketManager: SocketIOManager = .sharedInstance
     
     @IBOutlet weak var sceneView: ARSCNView!
@@ -45,6 +46,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         NotificationCenter.default.addObserver(self, selector: #selector(aang), name: NSNotification.Name(rawValue: "air"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(dwaneLokAttac), name: NSNotification.Name(rawValue: "earthl"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(dwaneRokAttac), name: NSNotification.Name(rawValue: "earthr"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(done), name: NSNotification.Name(rawValue: "done"), object: nil)
         
         socketManager.setSocketHandler()
         socketManager.establishConnection()
@@ -124,6 +126,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             addWaterBall(position: position)
             ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
         }
+    }
+    
+    @objc func done() {
+        print("water")
+        wastedImage.alpha = 1.0
     }
     
     //fire

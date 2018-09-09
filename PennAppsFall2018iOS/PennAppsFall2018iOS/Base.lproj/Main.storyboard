@@ -105,6 +105,12 @@
                                     <constraint firstAttribute="height" constant="135" id="kOy-s2-0da"/>
                                 </constraints>
                             </arscnView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uy301g6k38a01" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-GO-umC">
+                                <rect key="frame" x="-427" y="20" width="1229" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="mij-4a-1Rw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -115,9 +121,11 @@
                             <constraint firstItem="pP5-sD-hM6" firstAttribute="leading" secondItem="Glf-En-Z4U" secondAttribute="leading" id="Ri6-Zk-7PK"/>
                             <constraint firstItem="r1P-gR-gzF" firstAttribute="top" secondItem="Glf-En-Z4U" secondAttribute="top" id="RyR-CY-hqU"/>
                             <constraint firstItem="Wph-ER-ox0" firstAttribute="centerX" secondItem="FE3-rC-POe" secondAttribute="centerX" id="XEY-lw-lZC"/>
+                            <constraint firstItem="GPR-GO-umC" firstAttribute="centerX" secondItem="FE3-rC-POe" secondAttribute="centerX" id="aR7-0z-qMM"/>
                             <constraint firstItem="Glf-En-Z4U" firstAttribute="bottom" secondItem="r1P-gR-gzF" secondAttribute="bottom" id="c8G-3T-uEu"/>
                             <constraint firstItem="pP5-sD-hM6" firstAttribute="trailing" secondItem="Glf-En-Z4U" secondAttribute="trailing" id="lB0-yT-25X"/>
                             <constraint firstItem="pP5-sD-hM6" firstAttribute="top" secondItem="Glf-En-Z4U" secondAttribute="top" id="nKp-5V-9JA"/>
+                            <constraint firstItem="GPR-GO-umC" firstAttribute="top" secondItem="Glf-En-Z4U" secondAttribute="top" id="rmn-NE-CXu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Glf-En-Z4U"/>
                     </view>
@@ -127,14 +135,16 @@
                         <outlet property="sceneView" destination="Wph-ER-ox0" id="ipc-03-H7e"/>
                         <outlet property="sceneViewLeft" destination="eQS-WG-H2l" id="08J-vJ-f9f"/>
                         <outlet property="sceneViewRight" destination="50A-nz-yJM" id="fGm-ZH-u3r"/>
+                        <outlet property="wastedImage" destination="GPR-GO-umC" id="tw2-mC-brB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3c-E8-DY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="34"/>
+            <point key="canvasLocation" x="1556" y="34"/>
         </scene>
     </scenes>
     <resources>
         <image name="elements" width="800" height="800"/>
+        <image name="uy301g6k38a01" width="1229" height="465"/>
     </resources>
 </document>

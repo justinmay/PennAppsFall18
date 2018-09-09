@@ -16,7 +16,7 @@ class SocketIOManager: NSObject {
     static let sharedInstance = SocketIOManager()
     
     var manager : SocketManager = {
-        return SocketManager(socketURL: URL(string: "http://15ea163c.ngrok.io")!, config: [.log(false), .forcePolling(true)])
+        return SocketManager(socketURL: URL(string: "http://24d0ca92.ngrok.io")!, config: [.log(false), .forcePolling(true)])
     }()
     
     override init() {
