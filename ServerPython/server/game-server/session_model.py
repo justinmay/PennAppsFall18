@@ -1,5 +1,5 @@
 from db import db
-from models.player_model import PlayerModel
+from player_model import PlayerModel
 
 class SessionModel(db.Model):
     __tablename__ = 'sessions'

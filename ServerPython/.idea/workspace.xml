@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37709447-67be-4def-bdc1-914a05da8529" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/game-server/models/command_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/game-server/models/session_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/game-server/resources/command_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/game-server/resources/player_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/game-server/resources/session_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schools-server/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schools-server/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schools-server/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schools-server/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/school.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/models/player_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/student.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/models/user_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/resources/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/resources/school.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/resources/student.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/resources/user_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/data.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/models/command_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/command_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/models/player_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/player_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/models/session_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/session_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/models/user_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/user_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/resources/command_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/command_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/resources/player_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/player_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/resources/session_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/session_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/resources/user_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/user_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/game-server/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/game-server/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schools-server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schools-server/resources/school.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/resources/school.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schools-server/resources/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/resources/student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schools-server/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/resources/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schools-server/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/schools-server/security.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,10 +30,11 @@
     <session id="-1791565336">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,13 +52,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="141" />
-          <entry key="py" value="5361" />
+          <entry key="py" value="5765" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="141" />
-          <entry key="Python" value="5361" />
+          <entry key="Python" value="5765" />
         </counts>
       </usages-collector>
     </session>
@@ -71,47 +67,33 @@
     <favorites_list name="ServerPython" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/game-server/resources/session_resource.py">
+        <entry file="file://$PROJECT_DIR$/server/game-server/session_resource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="238">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
-                <marker date="1536446737329" expanded="true" signature="611:821" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/game-server/models/session_model.py">
+        <entry file="file://$PROJECT_DIR$/server/game-server/user_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-                <marker date="1536446737359" expanded="true" signature="841:876" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/game-server/models/user_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="295">
               <caret line="22" column="61" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/game-server/resources/command_resource.py">
+        <entry file="file://$PROJECT_DIR$/server/game-server/command_resource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -122,21 +104,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/game-server/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="142">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1536446737392" expanded="true" signature="1665:1732" ph="..." />
+                <marker date="1536458056101" expanded="true" signature="1742:1809" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/game-server/resources/player_resource.py">
+        <entry file="file://$PROJECT_DIR$/server/game-server/player_resource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="34">
+              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -150,7 +132,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/game-server/models/player_model.py">
+        <entry file="file://$PROJECT_DIR$/server/game-server/player_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
@@ -207,6 +189,7 @@
         <option value="$PROJECT_DIR$/server/game-server/resources/command.py" />
         <option value="$PROJECT_DIR$/server/game-server/__init__.py" />
         <option value="$PROJECT_DIR$/server/game-server/resources/player.py" />
+        <option value="$PROJECT_DIR$/server/game-server/player_resource.py" />
         <option value="$PROJECT_DIR$/server/game-server/app.py" />
       </list>
     </option>
@@ -244,40 +227,6 @@
             <path>
               <item name="ServerPython" type="b2602c69:ProjectViewProjectNode" />
               <item name="ServerPython" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="game-server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ServerPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerPython" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="game-server" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ServerPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerPython" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="schools-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ServerPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerPython" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="schools-server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ServerPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerPython" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="schools-server" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ServerPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerPython" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -296,6 +245,7 @@
       <recent name="C:\Users\skome\Documents\PennAppsFall18\ServerPython\server\game-server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\skome\Documents\PennAppsFall18\ServerPython\server\game-server" />
       <recent name="C:\Users\skome\Documents\PennAppsFall18\ServerPython\server\schools-server" />
       <recent name="C:\Users\skome\Documents\PennAppsFall18\ServerPython" />
     </key>
@@ -450,13 +400,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75596815" visible="true" weight="0.12957075" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75596815" visible="true" weight="0.19713831" />
       <window_info id="Favorites" order="1" sideWeight="0.24403183" side_tool="true" weight="0.12957075" />
       <window_info id="Structure" order="2" sideWeight="0.5017794" side_tool="true" weight="0.24960254" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,7 +422,7 @@
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75596815" visible="true" weight="0.12957075" />
-      <window_info id="Favorites" order="1" sideWeight="0.24403183" side_tool="true" visible="true" weight="0.12957075" />
+      <window_info id="Favorites" order="1" sideWeight="0.24403183" side_tool="true" weight="0.12957075" />
       <window_info id="Structure" order="2" sideWeight="0.5017794" side_tool="true" weight="0.24960254" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
@@ -506,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/schools-server/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -530,9 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,9 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,13 +504,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/resources/user_resource.py">
+    <entry file="file://$PROJECT_DIR$/server/game-server/user_resource.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,14 +517,10 @@
     <entry file="file://$PROJECT_DIR$/server/game-server/db.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/models/command_model.py">
+    <entry file="file://$PROJECT_DIR$/server/game-server/command_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <marker date="1536434287959" expanded="true" signature="755:795" ph="..." />
-            <marker date="1536434287959" expanded="true" signature="944:1003" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,14 +538,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/schools-server/models/student.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="117">
+          <caret line="346" selection-start-line="346" selection-end-line="346" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/models/player_model.py">
+    <entry file="file://$PROJECT_DIR$/server/game-server/models/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/server/game-server/session_resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/game-server/session_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1536446923828" expanded="true" signature="834:869" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/game-server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/game-server/player_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
@@ -627,75 +580,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/models/session_model.py">
+    <entry file="file://$PROJECT_DIR$/server/schools-server/models/student.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1536446737359" expanded="true" signature="841:876" ph="..." />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/resources/command_resource.py">
+    <entry file="file://$PROJECT_DIR$/server/game-server/user_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/models/user_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="295">
           <caret line="22" column="61" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/resources/session_resource.py">
+    <entry file="file://$PROJECT_DIR$/server/game-server/command_resource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1536446737329" expanded="true" signature="611:821" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="346" selection-start-line="346" selection-end-line="346" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/resources/player_resource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/game-server/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/server/game-server/player_resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/game-server/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="142">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1536446737392" expanded="true" signature="1665:1732" ph="..." />
+            <marker date="1536458056101" expanded="true" signature="1742:1809" ph="..." />
           </folding>
         </state>
       </provider>

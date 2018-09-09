@@ -1,11 +1,6 @@
 from flask_restful import Resource
-from flask_jwt import jwt_required
-from models.player_model import PlayerModel
-from flask_socketio import SocketIO, send
-from flask import current_app as app
+from player_model import PlayerModel
 
-
-from flask import current_app
 from flask_socketio import SocketIO
 
 class Player(Resource):
@@ -18,8 +13,12 @@ class Player(Resource):
 
     def post(self, name):
 
-        from app import socketio
-        SocketIO.emit(socketio, event='event', data='hello', namespace='/test')
+        import app
+
+        SocketIO.emit(app.socketio, event='message', data='hello data!')
+        SocketIO.emit(app.socketio, event='message', data='private data!')
+
+        #app.handleMessage('message!!')
 
         if PlayerModel.find_by_name(name):
             return {'message': "A Player with name '{}' already exists.".format(name)}, 400

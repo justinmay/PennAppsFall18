@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 from flask_jwt import jwt_required
-from models.player_model import StudentModel
+from player_model import StudentModel
 
 class Student(Resource):
     # set up the parser

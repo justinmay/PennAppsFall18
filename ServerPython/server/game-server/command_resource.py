@@ -1,7 +1,6 @@
 from flask_restful import Resource
-from flask_jwt import jwt_required
-from models.player_model import PlayerModel
-from models.command_model import CommandModel
+from player_model import PlayerModel
+from command_model import CommandModel
 
 class Command(Resource):
 

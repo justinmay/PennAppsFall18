@@ -3,9 +3,9 @@ from flask_restful import Api
 from flask_jwt import JWT
 
 from security import authenticate, identity
-from resources.user_resource import UserRegister
-from resources.player_resource import Student, StudentList
-from resources.session_resource import School, SchoolList
+from user_resource import UserRegister
+from player_resource import Student, StudentList
+from session_resource import School, SchoolList
 
 
 # create a flask instance

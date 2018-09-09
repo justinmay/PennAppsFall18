@@ -1,4 +1,4 @@
-from models.user_model import UserModel
+from user_model import UserModel
 # this class handles the flask-jwt
 
 # returns a access-token for the user if it is found in the database (does not return the user object itself)

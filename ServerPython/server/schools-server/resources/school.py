@@ -1,5 +1,5 @@
 from flask_restful import Resource
-from models.session_model import SchoolModel
+from session_model import SchoolModel
 
 class School(Resource):
     def get(self, name):

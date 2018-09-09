@@ -1,5 +1,5 @@
 from flask_restful import Resource, reqparse  # reqparse in order to parse the body of the request
-from models.user_model import UserModel
+from user_model import UserModel
 
 class UserRegister(Resource):
 

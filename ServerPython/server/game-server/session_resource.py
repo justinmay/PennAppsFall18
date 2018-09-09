@@ -1,6 +1,6 @@
 from flask_restful import Resource
-from models.session_model import SessionModel
-from models.player_model import PlayerModel
+from session_model import SessionModel
+from player_model import PlayerModel
 
 class Session(Resource):
     def get(self, name):
