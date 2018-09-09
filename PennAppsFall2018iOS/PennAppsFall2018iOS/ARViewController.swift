@@ -45,6 +45,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         NotificationCenter.default.addObserver(self, selector: #selector(aang), name: NSNotification.Name(rawValue: "air"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(dwaneLokAttac), name: NSNotification.Name(rawValue: "earthl"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(dwaneRokAttac), name: NSNotification.Name(rawValue: "earthr"), object: nil)
+        
         socketManager.setSocketHandler()
         socketManager.establishConnection()
         
@@ -53,14 +54,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         // Create a new scene
-        //let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        let fire = SCNParticleSystem(named: "Fire", inDirectory: nil)!
-        fire.emitterShape = SCNCone(topRadius: 0.5,bottomRadius: 0.5,height: 0.5)
-        fire.emissionDuration = 2.0
-        fire.particleLifeSpan = 5.0
-        //let scene = SCNScene(named: "candle.scn")!
         let scene = SCNScene()
-        //scene.addParticleSystem(fire, transform: SCNMatrix4MakeTranslation(0,-1,-10))
+    
         // Set the scene to the view
         sceneView.scene = scene
         
@@ -77,13 +72,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         sceneViewLeft.scene = scene
         sceneViewLeft.showsStatistics = sceneView.showsStatistics
         sceneViewLeft.isPlaying = true
-        //sceneViewLeft.transform = sceneViewLeft.transform.rotated(by: CGFloat(M_PI_2))
         
         // Set up Right-Eye SceneView
         sceneViewRight.scene = scene
         sceneViewRight.showsStatistics = sceneView.showsStatistics
         sceneViewRight.isPlaying = true
-        //sceneViewRight.transform = sceneViewRight.transform.rotated(by: CGFloat(M_PI_2))
         
         ////////////////////////////////////////////////////////////////
         // Update Camera Image Scale - according to iOS 11.3 (ARKit 1.5)
@@ -97,12 +90,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         ////////////////////////////////////////////////////////////////
         // Create CAMERA
         eyeCamera.zNear = 0.001
-        /*
-         Note:
-         - camera.projectionTransform was not used as it currently prevents the simplistic setting of .fieldOfView . The lack of metal, or lower-level calculations, is likely what is causing mild latency with the camera.
-         - .fieldOfView may refer to .yFov or a diagonal-fov.
-         - in a STEREOSCOPIC layout on iPhone7+, the fieldOfView of one eye by default, is closer to 38.5°, than the listed default of 60°
-         */
         eyeCamera.fieldOfView = CGFloat(eyeFOV)
         
         ////////////////////////////////////////////////////////////////
@@ -119,14 +106,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             let distance: Float = 1.0 // Hardcoded depth
             let pos = sceneSpacePosition(inFrontOf: cameraNode, atDistance: distance)
             
-            addSphere(position: pos)
+            addFireSphere(position: pos)
             
             ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3],position: getUserDirection())
         }
-
-        //let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapScreen))
-        //self.view.addGestureRecognizer(tapRecognizer)
-        
+   
     }
     
     //water
@@ -150,7 +134,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             translation.columns.3.z = -1.0
             let transform = camera.transform * translation
             let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
-            addWaterBall(position: position)
+            addFireSphere(position: position)
             ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
         }
     }
@@ -283,6 +267,19 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         ARHelperMethods.list.append(sphere)
     }
     
+    func addFireSphere(position: SCNVector3){
+        print("adding sphere at point: \(position)")
+        
+        let sphere: Sphere = Sphere(position: position)
+        let fire = SCNParticleSystem(named: "Fire", inDirectory: nil)!
+        fire.emitterShape = SCNCone(topRadius: 0.5,bottomRadius: 0.5,height: 0.5)
+        fire.emissionDuration = 2.0
+        fire.particleLifeSpan = 5.0
+        sphere.addParticleSystem(fire)
+        self.sceneView.scene.rootNode.addChildNode(sphere)
+        ARHelperMethods.list.append(sphere)
+    }
+    
     func getUserDirection() -> (SCNVector3) { // (direction, position)
         if let frame = self.sceneView.session.currentFrame {
             let mat = SCNMatrix4(frame.camera.transform) // 4x4 transform matrix describing camera in world space
@@ -302,21 +299,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         }
         return (SCNVector3(0, 0, -1))
     }
-    
-    func addSphere(position: SCNVector3){
-        print("adding sphere at point: \(position)")
-        let sphere: Sphere = Sphere(position: position)
-        let fire = SCNParticleSystem(named: "Fire", inDirectory: nil)!
-        fire.emitterShape = SCNCone(topRadius: 0.1,bottomRadius: 0.1,height: 0.1)
-        fire.emissionDuration = 2.0
-        fire.particleLifeSpan = 2.0
-        fire.stretchFactor = 2.0
-        fire.acceleration = SCNVector3(0,0,1.0)
-        //fire.dampingFactor = 1.0
-        //fire.isAffectedByGravity = true
-        sphere.addParticleSystem(fire)
-        self.sceneView.scene.rootNode.addChildNode(sphere)
-    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -372,6 +355,18 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         
         // Run the appearance animation.
         planeNode.runAction(appearanceAction)
+        
+        let start = planeNode.position
+        let wait = SCNAction.wait(duration: 3.0)
+        let animateOne = SCNAction.move(to: getUserPosition(), duration: 5.0)
+        let disappaer = SCNAction.fadeOpacity(to: CGFloat(0), duration: 0.1)
+        let appear = SCNAction.fadeOpacity(to: CGFloat(1), duration: 0.1)
+        let back2start = SCNAction.move(to: start, duration: 0.1)
+        
+        //let removeFrom = SCNAction.removeFromParentNode()
+        let sequence = SCNAction.sequence([wait, animateOne, disappaer, wait, back2start, appear])
+        let repeatSequence = SCNAction.repeat(sequence, count: 10)
+        planeNode.runAction(repeatSequence)
         
         self.planeNode = planeNode
         self.imageNode = node
