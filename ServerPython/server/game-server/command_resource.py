@@ -1,27 +1,28 @@
 from flask_restful import Resource
 from player_model import PlayerModel
 from command_model import CommandModel
+from actions_model import ElementModel
 
 class Command(Resource):
 
-    def get(self, player_name):
-        player = PlayerModel.find_by_name(player_name)
+    def get(self, playername, direction):
+        player = PlayerModel.find_by_name(playername)
         if player:
-            return CommandModel.find_by_player_name(player_name).json()
+            return CommandModel.find_by_player_name(playername).json()
         return {'message': 'Player not found'}, 404
 
-    def post(self, command_name, player_name):
-        command = CommandModel.find_by_player_name(player_name)
+    def post(self, playername, direction):
+        command = CommandModel.find_by_player_name(playername)
         if command:
-            command.update_command(command_name)
-            return {'message': "Command successfuly added for '{}'.".format(player_name)}, 400
+            command.delete_from_db()
+            command = CommandModel(direction, playername)
         else:
-            command = CommandModel(command_name, player_name)
+            command = CommandModel(direction, playername)
 
         try:
-            Command.save_to_db()
+            command.save_to_db()
         except:
-            return {'message': 'An error ocurred inserting the command.'}, 500
+            return {'message': 'An error occurred inserting the command.'}, 500
 
         return command.json(), 201
 
@@ -31,6 +32,10 @@ class Command(Resource):
             command.delete_from_db()
 
         return {'message': 'Command deleted'}
+
+
+
+
 
 class CommandsList(Resource):
     def get(self):

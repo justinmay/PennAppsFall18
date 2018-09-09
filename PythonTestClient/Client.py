@@ -10,7 +10,7 @@ class NewsNamespace(BaseNamespace):
     def on_aaa_response(self, *args):
         print('on_aaa_response', args)
 
-socketIO = SocketIO('2f2f976f.ngrok.io', 5000)
+socketIO = SocketIO('10.251.77.129', 5000)
 chat_namespace = socketIO.define(ChatNamespace, '/test')
 news_namespace = socketIO.define(NewsNamespace, '/private')
 

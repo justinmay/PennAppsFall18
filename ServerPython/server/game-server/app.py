@@ -6,7 +6,7 @@ from flask_socketio import SocketIO, emit, send
 from security import authenticate, identity
 from user_resource import UserRegister
 import player_resource
-from command_resource import Command
+from command_resource import Command, Action
 #from resources.player import Player, PlayerList
 from session_resource import Session, SessionList
 
@@ -36,12 +36,12 @@ api.add_resource(Session, '/session/<string:name>')
 api.add_resource(player_resource.Player, '/player/<string:name>')
 api.add_resource(SessionList, '/sessions')
 api.add_resource(player_resource.PlayerList, '/players')
-api.add_resource(Command, '/command/<string:playername>/<string:command>')
+api.add_resource(Command, '/command/<string:playername>/<string:direction>')
+api.add_resource(Action, '/action/<string:playername>/<string:element>')
 
 api.add_resource(UserRegister, '/register')
 
 socketio = SocketIO(app)
-
 
 @socketio.on('message')
 def handleMessage(msg):
@@ -54,4 +54,4 @@ def handleMessage(msg):
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
-    socketio.run(app, port=5000, debug=True)
+    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
