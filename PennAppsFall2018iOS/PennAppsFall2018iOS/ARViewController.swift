@@ -18,6 +18,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
     @IBOutlet weak var imageViewRight: UIImageView!
     @IBOutlet weak var imageViewLeft: UIImageView!
     
+    private var planeNode: SCNNode?
+    private var imageNode: SCNNode?
+    
     let eyeCamera : SCNCamera = SCNCamera()
     
     // Parametres
@@ -108,7 +111,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             
             addSphere(position: pos)
             
-            //ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3])
             ARHelperMethods.addAnimation(node: self.sceneView.scene.rootNode.childNodes[3],position: getUserDirection())
         }
 
@@ -117,6 +119,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         
     }
     
+    /*
+     // THIS IS TAP FOR WATER
     @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
             if let camera = sceneView.session.currentFrame?.camera {
                 var translation = matrix_identity_float4x4
@@ -127,6 +131,43 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
                 ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
             }
     }
+    */
+    
+    /*
+    //Tap for Rocks
+    @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
+        if let camera = sceneView.session.currentFrame?.camera {
+            //grab LR value
+            let LR = "L"
+            
+            //identifying position
+            var translation = matrix_identity_float4x4
+            translation.columns.3.z = -1.0
+            let transform = camera.transform * translation
+            let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+            
+            //adding a rock
+            let rockposition = addRock(LR: LR)
+            //ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
+            ARHelperMethods.addAnimationRocks(node: ARHelperMethods.getLastElement(), position: rockposition)
+        }
+    }
+    */
+    
+    //Tap for Air
+    @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
+        if let camera = sceneView.session.currentFrame?.camera {
+            
+            //identifying position
+            var translation = matrix_identity_float4x4
+            translation.columns.3.z = -1.0
+            let transform = camera.transform * translation
+            let airposition = addAir()
+            //ARHelperMethods.addAnimation(node: ARHelperMethods.getLastElement(), position: getUserDirection())
+            ARHelperMethods.addAnimationRocks(node: ARHelperMethods.getLastElement(), position: airposition)
+        }
+    }
+    
     
     //returns a SCNMatrix4 of the position
     func sceneSpacePosition(inFrontOf node: SCNNode, atDistance distance: Float) -> SCNVector3 {
@@ -135,6 +176,62 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         // to: nil is automatically scene space
         return scenePosition
     }
+    
+    //creates a rock
+    func addRock(LR: String) -> SCNVector3{
+        let position = getUserPosition()
+        let direction = getUserDirection()
+        let scalar = Float(5)
+        let lrScalar = Float(2)
+        var middle = direction
+        middle.x *= scalar; middle.y *= scalar; middle.z *= scalar
+        middle.x += position.x; middle.y += position.y; middle.z += position.z
+        if LR == "L" {
+            var left = direction
+            let temp = left.x
+            left.x = left.z
+            left.z = -1 * temp
+            left.x *= lrScalar; left.z *= lrScalar
+            middle.x += left.x; middle.z += left.z
+        }
+        if LR == "R" {
+            var left = direction
+            let temp = left.y
+            left.y = left.x
+            left.x = -1 * temp
+            left.x *= lrScalar; left.y *= lrScalar
+            middle.x += left.x; middle.y += left.y;
+        }
+        let rockScene = SCNScene(named: "rock.dae")!
+        let tempNode = rockScene.rootNode.childNode(withName: "Rock", recursively: true)!
+        var side = middle
+        side.y = -5
+        tempNode.position = side
+        self.sceneView.scene.rootNode.addChildNode(tempNode)
+        ARHelperMethods.list.append(tempNode)
+        return middle
+    }
+    
+    //creates a windmill
+    func addAir() -> SCNVector3{
+        let position = getUserPosition()
+        let direction = getUserDirection()
+        let scalar = Float(5)
+        var middle = direction
+        middle.x *= scalar; middle.y *= scalar; middle.z *= scalar
+        middle.x += position.x; middle.y += position.y; middle.z += position.z
+        let rockScene = SCNScene(named: "cloud.dae")!
+        //
+        let tempNode = rockScene.rootNode.childNode(withName: "cloudboi", recursively: true)!
+        var side = middle
+        side.y = +5
+        tempNode.position = side
+        self.sceneView.scene.rootNode.addChildNode(tempNode)
+        ARHelperMethods.list.append(tempNode)
+        return middle
+    }
+    
+    //creates a water ball
     func addWaterBall(position: SCNVector3){
         let water = SCNParticleSystem(named: "Water", inDirectory: nil)!
         water.emissionDuration = 2.0
@@ -147,7 +244,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         sphere.addParticleSystem(water)
         self.sceneView.scene.rootNode.addChildNode(sphere)
         ARHelperMethods.list.append(sphere)
-        
     }
     
     func getUserDirection() -> (SCNVector3) { // (direction, position)
@@ -156,6 +252,16 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
             let dir = SCNVector3(-1 * mat.m31, -1 * mat.m32, -1 * mat.m33) // orientation of camera in world space
 
             return (dir)
+        }
+        return (SCNVector3(0, 0, -1))
+    }
+    
+    func getUserPosition() -> (SCNVector3) { // (direction, position)
+        if let frame = self.sceneView.session.currentFrame {
+            let mat = SCNMatrix4(frame.camera.transform) // 4x4 transform matrix describing camera in world space
+            let pos = SCNVector3(mat.m41, mat.m42, mat.m43) // location of camera in world space
+            
+            return (pos)
         }
         return (SCNVector3(0, 0, -1))
     }
@@ -181,8 +287,57 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
+        // Load reference images to look for from "AR Resources" folder
+        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
+            fatalError("Missing expected asset catalog resources.")
+        }
+        
+        // Add previously loaded images to ARScene configuration as detectionImages
+        configuration.detectionImages = referenceImages
+        
         // Run the view's session
         sceneView.session.run(configuration)
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        guard let imageAnchor = anchor as? ARImageAnchor else {
+            return
+        }
+        //.5 Debug
+        print("found the picture")
+        
+        // 1. Load plane's scene.
+        let planeScene = SCNScene(named: "monkey.dae")!
+        let planeNode = planeScene.rootNode.childNode(withName: "monk", recursively: true)!
+        ARHelperMethods.rotate180y(node: planeNode)
+        ARHelperMethods.rotate180z(node: planeNode)
+        // 2. Calculate size based on planeNode's bounding box.
+        let (min, max) = planeNode.boundingBox
+        let size = SCNVector3Make(max.x - min.x, max.y - min.y, max.z - min.z)
+        
+        // 3. Calculate the ratio of difference between real image and object size.
+        // Ignore Y axis because it will be pointed out of the image.
+        let widthRatio = Float(imageAnchor.referenceImage.physicalSize.width)/size.x
+        let heightRatio = Float(imageAnchor.referenceImage.physicalSize.height)/size.z
+        // Pick smallest value to be sure that object fits into the image.
+        let finalRatio = [widthRatio, heightRatio].min()!
+        
+        // 4. Set transform from imageAnchor data.
+        planeNode.transform = SCNMatrix4(imageAnchor.transform)
+        
+        // 5. Animate appearance by scaling model from 0 to previously calculated value.
+        let appearanceAction = SCNAction.scale(to: CGFloat(finalRatio), duration: 0.4)
+        appearanceAction.timingMode = .easeOut
+        // Set initial scale to 0.
+        planeNode.scale = SCNVector3Make(0, 0, 0)
+        // Add to root node.
+        self.sceneView.scene.rootNode.addChildNode(planeNode)
+        
+        // Run the appearance animation.
+        planeNode.runAction(appearanceAction)
+        
+        self.planeNode = planeNode
+        self.imageNode = node
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -269,4 +424,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate  {
         self.imageViewLeft.image = uiimage
         self.imageViewRight.image = uiimage
     }
+    
+    
+   
+ 
 }
